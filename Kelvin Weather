@@ -1,0 +1,16 @@
+// I created a variable that describes the forecast in Kelvin. I choose the const because there is no need to reasign it
+const kelvin = 0;
+//The celsius scale has is related with the kelvin scale through the general relationship celsius=kelvin-273
+let celsius = kelvin - 273;
+console.log(celsius);
+//Next to convert from celsius from Farenhait I used the formula an equation where farenheit is (9/5)*celsius+32
+let fahrenheit = Math.floor(celsius * (9 / 5) + 32);
+//Sometimes it's a decimal number so I need to use .floor in order to make it integer
+console.log(`The temperature is ${fahrenheit} degrees Fahrenheit`);
+// Convert to Newton
+let newton = celsius * (33 / 100);
+
+// Round down
+newton = Math.floor(newton);
+
+console.log(`The temperature is ${newton} degrees Newton.`);
