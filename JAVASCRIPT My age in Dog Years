@@ -1,0 +1,19 @@
+//I first write my age so I can convert it in dog years afterwards
+let myAge = 31;
+// I created a variable called early Years that will change so that's why I choose let
+let earlyYears = 2;
+earlyYears *= 10.5;
+//Because I calculated the first two years in a dog life as multiplying by 2, I substracted them from my age so I can calculate the rest
+let laterYears = myAge - 2;
+//Here I multiplied the rest of my age with 4 because after two years; Each year following equates to 4 dog years.
+laterYears *= 4;
+console.log(earlyYears);
+console.log(laterYears);
+//Now I add earlyYears and laterYears so I can find out my age in dog years. Looks like a big number. Maybe life expectancy for dogs will increase too
+let myAgeInDogYears = earlyYears + laterYears;
+console.log(myAgeInDogYears);
+let myName = "Amina";
+//I wrote a message to present myself and my age in dog years
+console.log(
+  `My name is ${myName}. I am HUMAN ${myAge} years old in human years which is ${myAgeInDogYears} years old in dog years.`
+);
