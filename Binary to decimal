@@ -1,0 +1,33 @@
+// Given a binary number as an integer N, I converted it into decimal and print it
+import java.util.Scanner;
+
+public class Main {
+	
+	public static void main(String[] args) {
+// Created a Scanner object for user input
+	Scanner scanner = new Scanner(System.in);
+// Read the binary number from user input
+  int binaryNumber = scanner.nextInt();
+// Converted the binary number to a string
+ String strbinaryNumber = String.valueOf(binaryNumber);
+// Determined the length of the binary number so I can further take each digit and its position 
+  int count = strbinaryNumber.length();
+  int reversedNumber=0; 
+	int n=0;
+	int decimalNumber=0;
+// Iterate over each digit in the binary number
+  while(n < count) {
+// Get the rightmost digit of the binary number
+
+    	int digit=binaryNumber % 10;
+// Calculated the decimal equivalent using the digit and the power 
+      decimalNumber = (int)Math.pow(2, n) * digit + decimalNumber;
+// Removed the rightmost digit from the binary number
+
+    	binaryNumber = binaryNumber / 10; 
+// Increment the power of 2 for the next iteration
+    n++;
+    }
+    System.out.println(decimalNumber);
+	}
+}
